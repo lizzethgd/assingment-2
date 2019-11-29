@@ -91,21 +91,29 @@ footer {
     height: 60px;
     margin: auto;
     background: #008CBA;
-    
-}
-
-.banner-items{
-   display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
 }
 
 .banner::after {
     content: "";
     position: absolute;
     top: 60px;
+    left: 0;
     width: 0;
     height: 0;
     border-top: 50px solid #008CBA;
     border-right: 50px solid transparent;
+}
+
+.banner h2{
+font-weight: 100;
+}
+
+.banner span{
+font-weight: bold; 
+font-style: italic;  
 }
 
 .section-one{

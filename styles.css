@@ -7,7 +7,7 @@
 header {
     padding: 2% 7% 2% 7%;
     background: rgb(56, 56, 56);
-    color: white;
+  
 }
 
 body {
@@ -20,11 +20,11 @@ main {
     padding: 0 7% 0 7%;
 }
 
-/*footer {
+footer {
     background: rgb(56, 56, 56);
-    padding: 2% 7% 2% 7%;
-    color: white;
-}*/
+    /*padding: 2% 7% 2% 7%;*/
+    color: gray;
+}
 
 /*header*/
 /*.header-container {
@@ -43,7 +43,7 @@ main {
 
 .header-description {
     color: gray;
-   
+  
 }
 
 .header-description span {
@@ -147,35 +147,22 @@ font-style: italic;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 20%;
 }
 
 .circle{ 
     background:rgb(56, 56, 56);
     height: 100px;
     width: 100px;
-    color: white;
     border-radius: 75%;
     margin: 50px 0px;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-i{
-    color:white;
-}
-
-#item-one {
-    background: 
-}
-
-#item-two {
-    
-}
-
-#item-three {
-   
-}
-
-#item-four {
+.circle i {
+color: white;
 }
 
 /*Section two*/
@@ -334,19 +321,8 @@ i{
     border-right: 50px solid transparent;
 }
 
-.botton-tab {
-    background-color: #008CBA;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-weight: bold;
-}
-
-.botton-tab:hover{
-    background-color: rgb(7, 60, 206);
+.dev-botton{
+    float:right;
 }
 
 /*TABS start*/
@@ -414,9 +390,45 @@ i{
       display: block;
     }
   
-
-
   /*tabs ends*/
+
+  /*footer*/
+
+  .footer-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2% 7% 2% 7%;
+  }
+
+  footer h3, span {
+      color:white;
+  }
+
+  .footer-menu-item{
+      flex: 1;
+    
+  }
+  .footer-black{
+      background: rgb(27, 27, 27);
+  }
+
+  .socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+  }
+
+
+  .fab {
+    color: white;
+
+}
+
+
+
+
 
 
   

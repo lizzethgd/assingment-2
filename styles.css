@@ -31,7 +31,8 @@ footer {
 .header-container-top {
     display: flex;
     justify-content: center;
-    /*width:100%;*/
+    width:100%;
+    margin-bottom: 2%;
 }
 
 .header-imagen{
@@ -41,11 +42,13 @@ footer {
 
 #header-img{
     width: 100%;
+    height: auto;
 }
 .header-description {
+    display: flex;
+    flex-direction: column;
     color: gray;
-  width: 49%;
-  position: relative;
+   width: 49%;
 }
 
 .header-description span {
@@ -87,12 +90,9 @@ footer {
     color:white
 }
 
-.banner_container {
-    position: relative;
-    width: 100%;
-}
 
 .banner {
+    position: relative;
     width: 100%;
     height: auto;
     margin: auto;
@@ -142,6 +142,7 @@ font-style: italic;
     display: flex;
     justify-content: space-between;
     margin-bottom: 6%;
+    width: 100%;
 }
 
 .section-one-item{
@@ -256,6 +257,7 @@ color: white;
     height: 0;
     border-top: 35px solid white;
     border-right: 35px solid transparent;
+    z-index: 2;
 }
 
 .text-banner{
@@ -268,12 +270,11 @@ color: white;
     font-size: medium;
 }
 
+/*Section three*/ 
 
-
-.border-images{
+.section-three{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3%;
 }
 
 .borderimg-testimonials{
@@ -283,7 +284,7 @@ color: white;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 66.4%;/*no cambiar nunca*/
+margin-bottom: 3%;
     
 }
 .borderimg-testimonials::after{
@@ -303,8 +304,9 @@ color: white;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 32.3%;
+    margin-bottom: 6%;
 }
+
 .borderimg-development::after{
     content: "Development";
     position: absolute;
@@ -314,34 +316,35 @@ color: white;
     padding: 0.01% 2%;
     font-size: small;
   }
-/*Section three*/  
+ 
 
-.section-three{
+
+.testimonial-part{
+    width: 66.4%;
+    position: relative;
+}
+
+.development-part{
+     width: 32.3%;
+     position: relative;
+}
+
+
+.testimonials{ 
     display: flex;
     justify-content: space-between;
-    /*padding: 2% 0%;*/
-    margin-bottom: 1.5%;
-}
-.testimonials{ 
-    width: 32.5%;
-    position: relative;
- }
-
- .devenlopment{ 
-    width: 32.5%;
-    position: relative;
  }
 
 
 .banner-john-smith{
-    width: 100%;
+    width: 49%;
     height: auto;
     justify-content: center;
     align-items: center;
     background: white;
     display: flex;
-    margin-bottom: 20%;
-    padding: 7%;
+    margin-bottom: 10.5%;
+    padding: 2.25%;
     box-shadow: 5px 3px 5px -2px black;
  }
 
@@ -428,16 +431,14 @@ color: white;
     .input:checked + .label + .panel {
       display: block;
     }
-  
   /*tabs ends*/
 
   /*footer*/
 
   .footer-top{
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
-      padding: 2% 7% 2% 7%;
+      padding: 2% 7% 1% 7%;
   }
 
   footer h3, span {
@@ -646,7 +647,107 @@ i {
 /*media queries*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+
+
+    .header-container-top {
+       
+       flex-direction: column;
+    }
+    
+    .header-imagen{
+        width: 100%;
+    } 
+    .header-description {
+        width: 100%;
+        align-items: center;
+    }
+    .banner{
+        flex-direction: column; 
+        padding-bottom: 8%;
+    }
+
+   .section-one{
+       flex-direction: column;
+    }
+
+    .section-one-item{
+        width: 100%;
+    }
+
+    .borderimg-recent-work{
+        margin-bottom: 8%;
+    }
+    
+    .section-two{
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .recent-work-item{
+        width: 100%;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+
+    .footer-top-item{
+        width: 100%;
+    }
+
+    .flickr{
+        height: 200px;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+     .footer-icons{
+        width: 100%;
+     }
+
+     .section-three{
+        flex-direction: column;
+    }
+    
+    .testimonial-part{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .testimonials{
+        flex-direction: column;
+    }
+
+.development-part{
+    width: 100%;
+    margin-bottom: 5%;  
+}
+
+.banner-blog-tittle{
+    margin-bottom: 15%;  
+}
+
+.banner-john-smith{
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.label {
+    width: auto;
+  }
+
+  .panel {
+    order: 99;
+  }
+
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
